@@ -38,7 +38,7 @@
 			"path": "languages/ru.json"
 		}
 	],
-	"url": "",
-	"manifest": "",
+	"url": "https://github.com/liderako/foundry_daggerheart_game_profiles",
+	"manifest": "https://github.com/liderako/foundry_daggerheart_game_profiles/releases/latest/download/module.json",
 	"download": ""
 }
