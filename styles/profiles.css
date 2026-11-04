@@ -1,0 +1,92 @@
+#resources #resource-fear .mist-profiles-switch {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 6px;
+	margin-bottom: 0.35rem;
+	font-size: var(--font-size-11);
+}
+
+#resources #resource-fear .mist-profiles-switch select {
+	height: 20px;
+	max-width: 70%;
+	padding: 0 4px;
+	font-size: var(--font-size-11);
+	text-transform: uppercase;
+	letter-spacing: 0.05em;
+}
+
+#resources #resource-fear .mist-profiles-switch a {
+	cursor: pointer;
+	opacity: 0.6;
+}
+
+#resources #resource-fear .mist-profiles-switch a:hover {
+	opacity: 1;
+}
+
+#resources #resource-fear .mist-profiles-switch span {
+	padding: 1px 8px;
+	border: 1px solid var(--golden, #f3c267);
+	border-radius: 4px;
+	color: var(--golden, #f3c267);
+	text-transform: uppercase;
+	letter-spacing: 0.05em;
+}
+
+.mist-profiles-manager .mist-profiles-body {
+	display: flex;
+	flex-direction: column;
+	gap: 0.5rem;
+}
+
+.mist-profiles-manager .mist-profiles-list {
+	display: flex;
+	flex-direction: column;
+	gap: 4px;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+.mist-profiles-manager .mist-profiles-row {
+	display: flex;
+	align-items: center;
+	gap: 6px;
+}
+
+.mist-profiles-manager .mist-profiles-row input {
+	flex: 1;
+}
+
+.mist-profiles-manager .mist-profiles-row.active input {
+	font-weight: bold;
+}
+
+.mist-profiles-manager .mist-profiles-row a.disabled,
+.mist-profiles-manager .mist-profiles-row span.disabled {
+	opacity: 0.3;
+	pointer-events: none;
+}
+
+.mist-profiles-manager .mist-profiles-state {
+	width: 1.2em;
+	text-align: center;
+}
+
+.mist-profiles-manager .mist-profiles-row.active .mist-profiles-state {
+	color: var(--color-level-success, #3c9a3c);
+}
+
+.mist-profiles-manager .mist-profiles-create {
+	display: flex;
+	gap: 6px;
+}
+
+.mist-profiles-manager .mist-profiles-create input {
+	flex: 1;
+}
+
+.mist-profiles-manager .mist-profiles-create button {
+	flex: 0 0 auto;
+}

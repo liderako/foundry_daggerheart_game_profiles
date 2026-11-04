@@ -1,0 +1,33 @@
+{
+	"MIST_PROFILES": {
+		"Profile": {
+			"campaign": "Campaign",
+			"oneshot": "One-shot"
+		},
+		"Controls": {
+			"Title": "Game profiles (now: {profile})"
+		},
+		"Manager": {
+			"Title": "Game Profiles",
+			"Hint": "Each profile has its own Fear, countdowns and active party. A new profile starts empty.",
+			"Active": "Active profile",
+			"Activate": "Switch to this profile",
+			"MoveUp": "Move up",
+			"MoveDown": "Move down",
+			"Remove": "Remove the profile",
+			"CannotRemoveActive": "The active profile cannot be removed: switch to another one first",
+			"RemoveTitle": "Remove Profile",
+			"RemoveConfirm": "Remove the profile \"{name}\" with its saved Fear, countdowns and party? This cannot be undone.",
+			"NewName": "Name of the new profile",
+			"Create": "Create"
+		},
+		"Switched": "Profile: {profile}",
+		"SwitchFailed": "The profile could not be switched, see the console",
+		"Settings": {
+			"SwitchParty": {
+				"Name": "Switch the active party",
+				"Hint": "Each profile keeps its own active party: switching the profile activates the party that was active in it."
+			}
+		}
+	}
+}

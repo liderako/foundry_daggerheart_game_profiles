@@ -1,0 +1,26 @@
+<div class="mist-profiles-body">
+	<p class="hint">{{localize "MIST_PROFILES.Manager.Hint"}}</p>
+	<ul class="mist-profiles-list">
+		{{#each profiles as |profile|}}
+			<li class="mist-profiles-row {{#if profile.active}}active{{/if}}" data-profile-id="{{profile.id}}">
+				{{#if profile.active}}
+					<span class="mist-profiles-state" data-tooltip="{{localize "MIST_PROFILES.Manager.Active"}}"><i class="fa-solid fa-circle-check" inert></i></span>
+				{{else}}
+					<a class="mist-profiles-state" data-action="activate" data-tooltip="{{localize "MIST_PROFILES.Manager.Activate"}}"><i class="fa-regular fa-circle" inert></i></a>
+				{{/if}}
+				<input type="text" value="{{profile.name}}" data-rename="{{profile.id}}">
+				<a data-action="moveUp" class="{{#if profile.first}}disabled{{/if}}" data-tooltip="{{localize "MIST_PROFILES.Manager.MoveUp"}}"><i class="fa-solid fa-chevron-up" inert></i></a>
+				<a data-action="moveDown" class="{{#if profile.last}}disabled{{/if}}" data-tooltip="{{localize "MIST_PROFILES.Manager.MoveDown"}}"><i class="fa-solid fa-chevron-down" inert></i></a>
+				{{#if profile.active}}
+					<span class="mist-profiles-remove disabled" data-tooltip="{{localize "MIST_PROFILES.Manager.CannotRemoveActive"}}"><i class="fa-solid fa-trash" inert></i></span>
+				{{else}}
+					<a class="mist-profiles-remove" data-action="remove" data-tooltip="{{localize "MIST_PROFILES.Manager.Remove"}}"><i class="fa-solid fa-trash" inert></i></a>
+				{{/if}}
+			</li>
+		{{/each}}
+	</ul>
+	<div class="mist-profiles-create">
+		<input type="text" name="newName" placeholder="{{localize "MIST_PROFILES.Manager.NewName"}}">
+		<button type="button" data-action="create"><i class="fa-solid fa-plus" inert></i> {{localize "MIST_PROFILES.Manager.Create"}}</button>
+	</div>
+</div>

@@ -1,0 +1,44 @@
+{
+	"id": "mist-age-game-profiles",
+	"title": "The Mist Age - Game Profiles",
+	"description": "Keeps campaigns and one-shots apart: any number of profiles, each with its own Fear, countdowns and active party. The GM switches the profile from the Fear tracker; the other profiles keep their values untouched until they are switched back to.",
+	"version": "1.0.0",
+	"compatibility": {
+		"minimum": "13",
+		"verified": "14"
+	},
+	"authors": [
+		{
+			"name": "asvirido"
+		}
+	],
+	"relationships": {
+		"systems": [
+			{
+				"id": "daggerheart",
+				"type": "system"
+			}
+		]
+	},
+	"esmodules": [
+		"scripts/main.js"
+	],
+	"styles": [
+		"styles/profiles.css"
+	],
+	"languages": [
+		{
+			"lang": "en",
+			"name": "English",
+			"path": "languages/en.json"
+		},
+		{
+			"lang": "ru",
+			"name": "Русский",
+			"path": "languages/ru.json"
+		}
+	],
+	"url": "",
+	"manifest": "",
+	"download": ""
+}
